@@ -1,0 +1,80 @@
+@supports (grid-area:auto) {
+
+body{
+  padding:50px;
+
+}
+
+#timeline-section{
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  padding-top: 200px;
+}
+
+.timeline-line{
+  grid-column: 2/3;
+  grid-row: 1/5;
+  height: 700px;
+  width: 10px;
+  background-color: #373739;
+  border-radius: 5px;
+}
+
+.timeline-right{
+  text-align: left;
+  opacity:0;
+  transform: translateX(-50px);
+  transition: all .5s ease-out;
+  padding-left: 50px;
+}
+
+.timeline-right.fade-in{
+  transform: translateX(0px);
+  opacity:1;
+}
+
+.timeline-left{
+  text-align: left;
+  opacity:0;
+  transform: translateX(50px);
+  transition: all .5s ease-out;
+  padding-right: 50px;
+}
+
+.timeline-left.fade-in{
+  transform: translateX(0px);
+  opacity:1;
+}
+
+
+#timeline01{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#timeline02{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#timeline03{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+#timeline04{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#hand-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+
+
+}
