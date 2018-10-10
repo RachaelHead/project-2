@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+//animation of carrot
+    TweenMax.to('#carrot-down', 1.5, {ease: CustomEase.create("custom", "M0,0 C0.128,0.572 0.257,1.016 0.512,1.09 0.672,1.136 0.838,0 1,0"), y: 10 });
+
   //Init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
@@ -43,6 +46,6 @@ $(document).ready(function(){
   })
   .addTo(controller);
 
-  TweenMax.to('.logo', 2, {left:600});
+
 
 });

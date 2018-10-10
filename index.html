@@ -7,16 +7,41 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,600,600i" rel="stylesheet">
+
   </head>
   <body>
-  <h1> The History of Acupuncture </h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at sapien nec dui semper porta. Curabitur sed lectus volutpat, gravida est non, egestas tortor. In erat nunc, lacinia quis sem in, hendrerit lobortis magna. Donec facilisis blandit risus, at pretium lorem ullamcorper tincidunt.
-  </p>
 
-  <div id="timeline-section" class="main-container">
+  <div id="intro-section">
+    <h1> The History of Acupuncture </h1>
+    <p>
+      Acupuncture is practice that originates from Traditional Chinese Medicine. In acupuncture practice, the body has an energy, Qi (pronounced chee), that flows through meridians and pathways. Along the pathways, the body has more than 2,000 acupuncture points that practitioners puncture with needles to relieve pain and improve disease.
+    </p>
+    <p>
+      A proper flow of Qi provides good overall health. When this flow is interrupted or blocked, disease, pain and inflammation can occur. Acupuncturists utilize
+    </p>
+  </div>
 
-    <div class="timeline-line">
+  <div id="intro-scroll-prompt" class="flex-center flex-column">
+    <h3> Scroll to begin </h3>
+    <div class="carrot-down">
+      <img id="carrot-down" src="images/carrot-down.png" alt="arrow down"></img>
+    </div>
+  </div>
+
+  <div id="timeline-section" class="flex-center">
+    <div id="timeline-line" class="flex-center flex-column">
+      <div class="timeline-line">
+      </div>
+    </div>
+
+    <div id="timeline-dot-1" class="timeline-dot flex-center">
+    </div>
+    <div id="timeline-dot-2" class="timeline-dot flex-center ">
+    </div>
+    <div id="timeline-dot-3" class="timeline-dot flex-center ">
+    </div>
+    <div id="timeline-dot-4" class="timeline-dot flex-center ">
     </div>
 
     <div id="timeline01" class="timeline-right">
@@ -50,10 +75,24 @@
   </div>
 
   <div id="hand-section">
-    <div >
+    <div id="hand-image" class="flex-center">
+      <img src="images/hand-with-points.png" usemap="#image-map">
 
+      <map id="image-map"name="image-map">
+          <area id="liver-point" alt="Liver acupuncture point" title="Liver" coords="184,244,20" shape="circle">
+          <area id="asthma-point" alt="Asthma acupunture point" title="Asthma" coords="250,187,20" shape="circle">
+          <area id="heart-point" alt="Heart acupuncture point" title="Heart" coords="243,252,20" shape="circle">
+          <area id="head-point" alt="Head acupuncture point" title="Head" coords="228,22,20" shape="circle">
+          <area id="stomach-point" alt="Stomach acupuncture point" title="Stomach" coords="274,289,20" shape="circle">
+          <area id="kidney-point" alt="Kidney acupuncture point" title="Kidney" coords="327,293,20" shape="circle">
+          <area id="colon-point" alt="Inflamed colon acupuncture point" title="Inflamed Colon" coords="317,326,20" shape="circle">
+          <area id="insomnia-point" alt="Insomnia acupuncture point" title="Insomnia" coords="51,272,20" shape="circle">
+          <area id="large-intestine-point" alt="Large intestine acupuncture point" title="Large Intestine" coords="241,354,20" shape="circle">
+          <area id="small-intestine-point" alt="Small intestine acupuncture point" title="Small Intestine" coords="270,352,20" shape="circle">
+          <area id="diabetes-point" alt="Diabetes acupuncture point" title="Diabetes" coords="298,382,20" shape="circle">
+      </map>
     </div>
-    <div>
+    <div id="popup-area">
 
     </div>
   </div>
@@ -65,6 +104,7 @@
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/CustomEase.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

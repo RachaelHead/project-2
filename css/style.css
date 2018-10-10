@@ -2,24 +2,78 @@
 
 body{
   padding:50px;
+  font-family: 'Montserrat', sans-serif;
+}
 
+h1{
+  font-size: 30px;
+  font-weight: 600;
+  color:#0C0D0C;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 600;
+  color:#0C0D0C;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 200;
+  color:#0C0D0C;
+}
+
+p{
+  font-size: 14px;
+  font-weight: 400;
+  color:#0C0D0C;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-wrap{
+  flex-direction: row wrap;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+#intro-section p{
+  padding: 0px 50px 0px 50px;
+}
+
+#intro-scroll-prompt{
+  padding-top: 30px;
+}
+
+.carrot-down img{
+  width:30px;
 }
 
 #timeline-section{
   display: grid;
-  grid-template-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 20px 1fr;
   grid-template-rows:1fr 1fr 1fr 1fr;
   grid-column-gap: 15px;
-  padding-top: 200px;
+  padding: 50px 0px 100px 0px;
+}
+
+#timeline-line{
+  grid-column: 2/3;
+  grid-row: 1/5;
 }
 
 .timeline-line{
-  grid-column: 2/3;
-  grid-row: 1/5;
   height: 700px;
   width: 10px;
-  background-color: #373739;
+  background-color: #1C221F;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .timeline-right{
@@ -48,9 +102,22 @@ body{
   opacity:1;
 }
 
+.timeline-dot{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #87E5C3;
+  z-index: 2;
+}
+
 
 #timeline01{
   grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#timeline-dot-1{
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 
@@ -59,8 +126,18 @@ body{
   grid-row: 2/3;
 }
 
+#timeline-dot-2{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
 #timeline03{
   grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+#timeline-dot-3{
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 
@@ -69,10 +146,30 @@ body{
   grid-row: 4/5;
 }
 
+#timeline-dot-4{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
 #hand-section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 500px;
+}
+
+#hand-section{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+#hand-image{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#hand-image img{
+  max-height: 510px;
 }
 
 
