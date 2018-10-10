@@ -51,7 +51,7 @@ p{
   padding-top: 30px;
 }
 
-.carrot-down img{
+#intro-scroll-prompt img{
   width:30px;
 }
 
@@ -151,6 +151,8 @@ p{
   grid-row: 4/5;
 }
 
+/* HAND MAP SECTION */
+
 #hand-section{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,6 +173,39 @@ p{
 #hand-image img{
   max-height: 510px;
 }
+
+.popup{
+  visibility:hidden;
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+  border: 5px solid #87E5C3;
+  border-radius: 100px;
+}
+
+.liver-popup.active{
+  visibility:visible;
+}
+
+.stomach-popup.active{
+  visibility:visible;
+}
+
+.popup img{
+  height:30px;
+}
+
+
+#stomach-close, #liver-close{
+  width:20px;
+  height:20px;
+}
+
+.close-button:hover{
+  cursor: pointer;
+}
+
+
 
 
 

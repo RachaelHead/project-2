@@ -6,7 +6,7 @@ $(document).ready(function(){
   //Init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
-  // scene
+  // first timeline element
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#timeline01'
   })
@@ -16,7 +16,7 @@ $(document).ready(function(){
   })
   .addTo(controller);
 
-  // scene
+  // second timeline element
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#timeline02'
   })
@@ -26,7 +26,7 @@ $(document).ready(function(){
   })
   .addTo(controller);
 
-  // scene
+  // third timeline element
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#timeline03'
   })
@@ -36,7 +36,7 @@ $(document).ready(function(){
   })
   .addTo(controller);
 
-  // scene
+  // fourth timeline element
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#timeline04'
   })
@@ -45,6 +45,32 @@ $(document).ready(function(){
     name: 'timeline element 4 fade scene'
   })
   .addTo(controller);
+
+  //image map
+
+
+  $("#liver-point").click(function(){
+    console.log('liver clicked');
+    $(".liver-popup").addClass("active");
+  });
+
+  $("#liver-close").click(function(){
+    console.log('close clicked');
+    $(".liver-popup").removeClass("active");
+  });
+
+  $("#stomach-point").click(function(){
+    console.log('stomach clicked');
+    $(".stomach-popup").addClass("active");
+  });
+
+  $("#stomach-close").click(function(){
+    console.log('close clicked');
+    $(".stomach-popup").removeClass("active");
+  });
+
+
+
 
 
 
