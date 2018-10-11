@@ -46,6 +46,55 @@ $(document).ready(function(){
   })
   .addTo(controller);
 
+  // fifth timeline element
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#timeline05'
+  })
+  .setClassToggle('#timeline05', 'fade-in') //add class to project01
+  .addIndicators({
+    name: 'timeline element 5 fade scene'
+  })
+  .addTo(controller);
+
+  // sixth timeline element
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#timeline06'
+  })
+  .setClassToggle('#timeline06', 'fade-in') //add class to project01
+  .addIndicators({
+    name: 'timeline element 6 fade scene'
+  })
+  .addTo(controller);
+
+  // seventh timeline element
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#timeline07'
+  })
+  .setClassToggle('#timeline07', 'fade-in') //add class to project01
+  .addIndicators({
+    name: 'timeline element 7 fade scene'
+  })
+  .addTo(controller);
+
+  // eighth timeline element
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#timeline08'
+  })
+  .setClassToggle('#timeline08', 'fade-in') //add class to project01
+  .addIndicators({
+    name: 'timeline element 8 fade scene'
+  })
+  .addTo(controller);
+
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#timeline09'
+  })
+  .setClassToggle('#timeline09', 'fade-in') //add class to project01
+  .addIndicators({
+    name: 'timeline element 9 fade scene'
+  })
+  .addTo(controller);
+
   //image map
 
 
@@ -59,14 +108,14 @@ $(document).ready(function(){
     $(".liver-popup").removeClass("active");
   });
 
-  $("#stomach-point").click(function(){
+  $("#insomnia-point").click(function(){
     console.log('stomach clicked');
-    $(".stomach-popup").addClass("active");
+    $(".insomnia-popup").addClass("active");
   });
 
-  $("#stomach-close").click(function(){
+  $("#insomnia-close").click(function(){
     console.log('close clicked');
-    $(".stomach-popup").removeClass("active");
+    $(".insomnia-popup").removeClass("active");
   });
 
 
