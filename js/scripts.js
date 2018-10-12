@@ -118,9 +118,12 @@ $(document).ready(function(){
     $(".insomnia-popup").removeClass("active");
   });
 
+  // Quiz
 
-
-
-
+  $(function () {
+    $('#slickQuiz').slickQuiz({
+        // options
+    });
+  });
 
 });
