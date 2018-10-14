@@ -4,6 +4,7 @@ body{
   padding:50px;
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #F5FAF8;
+  color:#0C0D0C;
 }
 
 h1, h2, h3{
@@ -13,26 +14,28 @@ h1, h2, h3{
 h1{
   font-size: 50px;
   font-weight: 400;
-  color:#0C0D0C;
   letter-spacing: 5px;
 }
 
 h2{
   font-size: 24px;
   font-weight: 700;
-  color:#0C0D0C;
 }
 
 h3{
   font-size: 18px;
   font-weight: 700;
-  color:#0C0D0C;
+}
+
+h4{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 p{
   font-size: 14px;
   font-weight: 400;
-  color:#0C0D0C;
   letter-spacing: 1px;
 }
 
@@ -401,6 +404,12 @@ ul.responses li.incorrect p span {
 .quizResultsCopy {
     clear: both;
     margin-top: 20px;
+}
+
+/* SOURCES */
+
+#sources-section{
+  margin-top: 100px;
 }
 
 
