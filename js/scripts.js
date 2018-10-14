@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //animation of carrot
-    TweenMax.to('#carrot-down', 1.5, {ease: CustomEase.create("custom", "M0,0 C0.128,0.572 0.257,1.016 0.512,1.09 0.672,1.136 0.838,0 1,0"), y: 10 });
+    TweenMax.to('#carrot-down', 1.5, {ease: CustomEase.create("custom", "M0,0 C0.128,0.572 0.257,1.016 0.512,1.09 0.672,1.136 0.838,0 1,0"), y: 10, repeat:-1 });
 
   //Init ScrollMagic
   var controller = new ScrollMagic.Controller();
@@ -109,13 +109,23 @@ $(document).ready(function(){
   });
 
   $("#insomnia-point").click(function(){
-    console.log('stomach clicked');
+    console.log('insomnia clicked');
     $(".insomnia-popup").addClass("active");
   });
 
   $("#insomnia-close").click(function(){
     console.log('close clicked');
     $(".insomnia-popup").removeClass("active");
+  });
+
+  $("#colon-point").click(function(){
+    console.log('colon clicked');
+    $(".colon-popup").addClass("active");
+  });
+
+  $("#colon-close").click(function(){
+    console.log('close clicked');
+    $(".colon-popup").removeClass("active");
   });
 
   // Quiz
