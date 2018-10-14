@@ -55,7 +55,7 @@ var quizJSON = {
                 {"option": "President Obama",      "correct": false},
                 {"option": "President Nixon",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>That's the one!</span> It was a member of the US press corps that received acupuncture and spoke about it in the New York Times.</p>",
+            "correct": "<p><span>That's the one!</span> A member of the US press corps visited China in preparation for a diplomatic visit of President Nixon, received acupuncture, and spoke about it in the New York Times.</p>",
             "incorrect": "<p><span>Incorrect.</span> It was President Nixon.</p>" // no comma here
         },
         { // Question 5
